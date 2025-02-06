@@ -1,0 +1,29 @@
+<div class="workout-list" *ngIf="filteredWorkouts.length > 0">
+  <h3>User Workouts</h3>
+  <table>
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Workouts</th>
+      <th>Number of Workouts</th>
+      <th>Total Duration</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of filteredWorkouts">
+      <td>{{ user.username }}</td>
+      <td>
+        <ul>
+          <li *ngFor="let workout of user.workouts">
+            {{ workout.type }} ({{ workout.minutes }} minutes)
+          </li>
+        </ul>
+      </td>
+      <td>{{ user.workouts.length }}</td>
+      <td>{{ getTotalDuration(user.workouts) }} minutes</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+

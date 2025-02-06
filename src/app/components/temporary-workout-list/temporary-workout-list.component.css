@@ -1,0 +1,49 @@
+/* Temporary Workout List Container */
+.temporary-workout-list {
+  background-color: #1a1a1a; /* Dark grey background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  color: #e0e0e0; /* Light grey text */
+}
+
+/* Heading */
+.temporary-workout-list h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ffffff; /* White for heading */
+  border-bottom: 2px solid #4a90e2; /* Blue accent line */
+  padding-bottom: 5px;
+}
+
+/* List */
+.temporary-workout-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* List Items */
+.temporary-workout-list li {
+  background-color: #2a2a2a; /* Slightly lighter grey for list items */
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #e0e0e0; /* Light grey text */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.temporary-workout-list li:hover {
+  background-color: #333; /* Darker grey on hover */
+  transform: translateX(5px); /* Slight move effect on hover */
+}
+
+/* No Workouts Message */
+.temporary-workout-list .no-workouts {
+  text-align: center;
+  font-style: italic;
+  color: #888; /* Grey for placeholder text */
+}

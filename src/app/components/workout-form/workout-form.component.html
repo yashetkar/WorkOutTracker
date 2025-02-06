@@ -1,0 +1,24 @@
+<div class="workout-form">
+  <div class="form-field">
+    <label for="username">User Name</label>
+    <input id="username" type="text" placeholder="Enter your name" [(ngModel)]="username" />
+  </div>
+
+  <div class="form-field">
+    <label for="workoutType">Workout Type</label>
+    <select id="workoutType" [(ngModel)]="workoutType">
+      <option value="Cycling">Cycling</option>
+      <option value="Cardio">Cardio</option>
+      <option value="Powerlifting">Powerlifting</option>
+      <option value="Weightlifting">Weightlifting</option>
+    </select>
+  </div>
+
+  <div class="form-field">
+    <label for="workoutMinutes">Workout Minutes</label>
+    <input id="workoutMinutes" type="number" placeholder="Enter minutes" [(ngModel)]="workoutMinutes" min="1" max="180" required />
+  </div>
+
+  <button class="add-button" (click)="addWorkoutToTemporaryList()">Add Workout to List</button>
+  <button class="submit-button add-button" (click)="onSubmitWorkouts()">Submit Workouts</button>
+</div>

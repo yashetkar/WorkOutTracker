@@ -1,0 +1,8 @@
+<div class="temporary-workout-list" *ngIf="temporaryWorkouts.length > 0">
+  <h3>Temporary Workouts</h3>
+  <ul>
+    <li *ngFor="let workout of temporaryWorkouts">
+      {{ workout.type }} - {{ workout.minutes }} minutes
+    </li>
+  </ul>
+</div>

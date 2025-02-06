@@ -1,0 +1,301 @@
+.workout-form {
+  margin-top: 100px;
+  margin: 100px auto 0px auto;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; /* Space between fields */
+  background: rgba(255, 255, 255, 0.3); /* Translucent background */
+  padding: 2rem 2rem; /* Padding for the form */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+}
+
+.workout-form * {
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-field {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Ensures all fields are the same width */
+  margin: 10px;
+}
+
+.form-field label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.form-field input,
+.form-field select {
+  width: 100%; /* Matches the width of the parent */
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  border-color: #4ca1af;
+}
+
+/* Button Styling */
+.add-button {
+  background: #4ca1af;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  margin: 10px auto;
+  width: 100%; /* Matches the button width to the fields */
+}
+
+.add-button:hover {
+  background: #2c3e50;
+  transform: scale(1.05);
+}
+
+.add-button:active {
+  transform: scale(1);
+  background: #3b6978;
+}
+
+
+.label{
+  text-align: center;
+}
+
+
+
+/* Styling for the Workout List Table */
+.TABLE {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 12px;
+  background: #e0f7fa; /* Light cyan background */
+  background: rgba(255, 255, 255, 0.42); /* Soft cyan shadow */
+  text-align: center;
+}
+
+/* Heading */
+h3 {
+  text-align: center;
+  color: #006064; /* Dark cyan */
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* Table Styling */
+table {
+  margin: auto;
+  align-content: center;
+  width: 60vw;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.21);
+  border-radius: 10px;
+  overflow: hidden; /* Ensures border-radius applies properly */
+  box-shadow: 0px 2px 4px rgba(0, 150, 136, 0.3);
+}
+
+/* Table Header */
+th {
+  background-color: #00acc1; /* Cyan */
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* Table Cells */
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #b2ebf2; /* Light cyan border */
+  font-size: 14px;
+}
+
+/* Alternate row colors */
+tr:nth-child(even) {
+  background-color: #b2ebf2; /* Soft cyan */
+}
+
+tr:nth-child(odd) {
+  background-color: #e0f7fa; /* Lighter cyan */
+}
+
+/* Hover effect */
+tr:hover {
+  background-color: #80deea; /* Medium cyan */
+  transition: background 0.3s ease-in-out;
+}
+
+
+.temporary-workout-list {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.temporary-workout-list h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.temporary-workout-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.temporary-workout-list li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  font-size: 1em;
+  color: #555;
+  transition: background-color 0.3s ease;
+}
+
+.temporary-workout-list li:hover {
+  background-color: #f1f1f1;
+}
+
+
+.graph-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.graph-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.graph-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-section input,
+.filter-section select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.filter-section input {
+  width: 250px;
+}
+
+.filter-section select {
+  cursor: pointer;
+  width: 180px;
+}
+
+.filter-section input:focus,
+.filter-section select:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+@media (max-width: 600px) {
+  .filter-section {
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .filter-section input,
+  .filter-section select {
+    width: 100%;
+  }
+}
+
+
+
+
+

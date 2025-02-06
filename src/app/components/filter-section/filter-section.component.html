@@ -1,0 +1,11 @@
+<div class="filter-section">
+  <h3>Filter By</h3>
+  <input type="text" placeholder="Search by username" [(ngModel)]="searchUsername" (input)="onSearch()" />
+  <select [(ngModel)]="filterWorkoutType" (change)="onSearch()">
+    <option value="">All Workouts</option>
+    <option value="Cycling">Cycling</option>
+    <option value="Cardio">Cardio</option>
+    <option value="Powerlifting">Powerlifting</option>
+    <option value="Weightlifting">Weightlifting</option>
+  </select>
+</div>

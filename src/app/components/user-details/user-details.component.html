@@ -1,0 +1,10 @@
+<app-workout-form
+  (addWorkout)="onAddWorkout($event)"
+  (submitWorkouts)="onSubmitWorkouts($event)"> <!-- Pass the username -->
+</app-workout-form>
+
+<app-temporary-workout-list [temporaryWorkouts]="temporaryWorkouts"></app-temporary-workout-list>
+
+<app-filter-section (search)="onSearch($event)"></app-filter-section>
+
+<app-user-workout-list [filteredWorkouts]="filteredWorkouts()"></app-user-workout-list>

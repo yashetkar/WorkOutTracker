@@ -1,0 +1,140 @@
+/* General styles */
+body {
+  background-size: cover;
+  color: #e0e0e0;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Workout list container */
+.workout-list {
+  width: 60vw;
+  margin: 2rem auto;
+  padding: 20px;
+  background: rgba(31, 31, 31, 0.3); /* Fully translucent background */
+  backdrop-filter: blur(50px); /* Blurred glass effect */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+/* Hover effect - subtle scale */
+.workout-list:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+}
+
+/* Title */
+.workout-list h3 {
+  color: #ffffff;
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Header styling */
+th {
+  background: rgba(51, 51, 51, 0.4); /* More transparency */
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+}
+
+/* Header hover effect */
+th:hover {
+  background: rgba(80, 80, 80, 0.5);
+}
+
+/* Table row styling */
+td {
+  background: rgba(31, 31, 31, 0.4);
+  color: #ffffff;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Row hover effect */
+tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Interactive List styles */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  color: #ddd;
+  list-style-type: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* List item hover effect */
+ul li:hover {
+  color: #fff;
+  transform: translateX(5px);
+}
+
+/* Button Styles */
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  transform: scale(1.05);
+}
+
+/* Button active effect */
+button:active {
+  transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .workout-list {
+    width: 90vw;
+    padding: 15px;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
